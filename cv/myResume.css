@@ -9,8 +9,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #02005b;
-  color: rgba(255, 255, 255, 0.95);
+  background-color: #F5E4D7;
+  color: #73877B;
   font-size: 15px;
   line-height: 28px;
   letter-spacing: 1.5px;
@@ -45,7 +45,7 @@ h4 {
 }
 
 a {
-  color: white;
+  color: #73877B;
   text-decoration: none;
 }
 
@@ -162,7 +162,7 @@ hr {
   position: relative;
   content: "";
   display: block;
-  background-color: #02005b;
+  background-color: #F5E4D7;
   width: calc(100% - 20px);
   height: calc(100% - 20px);
   border-radius: 50%;
