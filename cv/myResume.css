@@ -1,0 +1,287 @@
+@charset "UTF-8";
+/* 複寫區 */
+/* .listProgram */
+body {
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #02005b;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+
+h2::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 8px;
+  background-color: #ff7168;
+  margin-left: 10px;
+}
+
+h4 {
+  margin: 0;
+  margin-top: 40px;
+  opacity: 0.8;
+  font-weight: 400;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+hr {
+  border: none;
+  border-bottom: 4px solid #ff7168;
+  width: 40%;
+  margin-left: 0;
+}
+
+.resume {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 950px;
+  border: solid 8px white;
+  padding: 50px;
+}
+
+.left {
+  padding: 15px;
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+  padding-right: 50px;
+  border-right: #ff7168 1px solid;
+}
+
+.right {
+  padding: 15px;
+  -webkit-box-flex: 7;
+      -ms-flex: 7;
+          flex: 7;
+  padding-left: 50px;
+  padding-top: 150px;
+}
+
+.decoration {
+  width: 300px;
+  height: 140px;
+  background: linear-gradient(135deg, #ff5f5f, #ffffae);
+  border-radius: 70px 0 0 70px;
+  position: absolute;
+  right: 0;
+  top: 50px;
+}
+
+.listExperience > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.listExperience > li:nth-child(1) ul {
+  border-color: #ff7168;
+}
+
+.listExperience > li:nth-child(2) ul {
+  border-color: #ffa582;
+}
+
+.listExperience > li:nth-child(3) ul {
+  border-color: #ffb087;
+}
+
+.listExperience > li:nth-child(4) ul {
+  border-color: #ffde9e;
+}
+
+.listExperience li ul {
+  padding-left: 10px;
+  margin-left: 10px;
+  border-left: 4px solid white;
+}
+
+.listSkill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.listSkill li {
+  width: 25%;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.circle {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 112, 101, 0.4);
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.circle::after {
+  position: relative;
+  content: "";
+  display: block;
+  background-color: #02005b;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  border-radius: 50%;
+  z-index: 999;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.p90 {
+  width: 60%;
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  background-color: #ff7168;
+}
+
+.p180 {
+  width: 60%;
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  background-color: #ff7168;
+  top: 50%;
+}
+
+.p270 {
+  width: 60%;
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  background-color: #ff7168;
+  top: 50%;
+  left: 0;
+}
+
+.p360 {
+  width: 60%;
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  background-color: #ff7168;
+  top: 0;
+  left: 0;
+}
+
+.listProgram .bar {
+  width: 150px;
+  height: 8px;
+  border-radius: 5px;
+  border: solid 2px #ff7168;
+}
+
+.listProgram li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10px;
+}
+
+.value {
+  height: 100%;
+  background-color: #ff7168;
+}
+
+.value.p10 {
+  width: 10%;
+}
+
+.value.p20 {
+  width: 20%;
+}
+
+.value.p30 {
+  width: 30%;
+}
+
+.value.p40 {
+  width: 40%;
+}
+
+.value.p50 {
+  width: 50%;
+}
+
+.value.p60 {
+  width: 60%;
+}
+
+.value.p70 {
+  width: 70%;
+}
+
+.value.p80 {
+  width: 80%;
+}
+
+.value.p90 {
+  width: 90%;
+}
+
+.btn {
+  border: solid 3px #ff7168;
+  padding: 5px 10px;
+}
+
+.fill {
+  background-color: #ff7168;
+  margin-right: 10px;
+}
+/*# sourceMappingURL=myResume.css.map */

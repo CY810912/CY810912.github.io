@@ -1,0 +1,241 @@
+$color_1: rgba(255, 255, 255, 0.95);
+$color_2: white;
+$background_color_1: #02005b;
+$background_color_2: #ff7168;
+$background_color_3: rgba(255, 112, 101, 0.4);
+$border_color_1: #ff7168;
+$border_color_2: #ffa582;
+$border_color_3: #ffb087;
+$border_color_4: #ffde9e;
+
+/* 複寫區 */
+/* .listProgram */
+body {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: $background_color_1;
+  color: $color_1;
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+ul {
+  padding: 0;
+  list-style: none;
+}
+h2 {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 400;
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 8px;
+    background-color: $background_color_2;
+    margin-left: 10px;
+  }
+}
+h4 {
+  margin: 0;
+  margin-top: 40px;
+  opacity: 0.8;
+  font-weight: 400;
+}
+a {
+  color: $color_2;
+  text-decoration: none;
+}
+hr {
+  border: none;
+  border-bottom: 4px solid #ff7168;
+  width: 40%;
+  margin-left: 0;
+}
+.resume {
+  position: relative;
+  display: flex;
+  max-width: 950px;
+  border: solid 8px white;
+  padding: 50px;
+}
+.left {
+  padding: 15px;
+  flex: 5;
+  padding-right: 50px;
+  border-right: #ff7168 1px solid;
+}
+.right {
+  padding: 15px;
+  flex: 7;
+  padding-left: 50px;
+  padding-top: 150px;
+}
+.decoration {
+  width: 300px;
+  height: 140px;
+  background: linear-gradient(135deg, #ff5f5f, #ffffae);
+  border-radius: 70px 0 0 70px;
+  position: absolute;
+  right: 0;
+  top: 50px;
+}
+.listExperience {
+  > li {
+    display: flex;
+    margin-bottom: 10px;
+    &:nth-child(1) {
+      ul {
+        border-color: $border_color_1;
+      }
+    }
+    &:nth-child(2) {
+      ul {
+        border-color: $border_color_2;
+      }
+    }
+    &:nth-child(3) {
+      ul {
+        border-color: $border_color_3;
+      }
+    }
+    &:nth-child(4) {
+      ul {
+        border-color: $border_color_4;
+      }
+    }
+  }
+  li {
+    ul {
+      padding-left: 10px;
+      margin-left: 10px;
+      border-left: 4px solid white;
+    }
+  }
+}
+.listSkill {
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    width: 25%;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+.circle {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: $background_color_3;
+  border-radius: 100%;
+  overflow: hidden;
+  &::after {
+    position: relative;
+    content: "";
+    display: block;
+    background-color: $background_color_1;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    border-radius: 50%;
+    z-index: 999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.p90 {
+  width: 60%;
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  background-color: $background_color_2;
+}
+.p180 {
+  width: 60%;
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  background-color: $background_color_2;
+  top: 50%;
+}
+.p270 {
+  width: 60%;
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  background-color: $background_color_2;
+  top: 50%;
+  left: 0;
+}
+.p360 {
+  width: 60%;
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  background-color: $background_color_2;
+  top: 0;
+  left: 0;
+}
+.listProgram {
+  .bar {
+    width: 150px;
+    height: 8px;
+    border-radius: 5px;
+    border: solid 2px #ff7168;
+  }
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+  }
+}
+.value {
+  height: 100%;
+  background-color: $background_color_2;
+}
+.value.p10 {
+  width: 10%;
+}
+.value.p20 {
+  width: 20%;
+}
+.value.p30 {
+  width: 30%;
+}
+.value.p40 {
+  width: 40%;
+}
+.value.p50 {
+  width: 50%;
+}
+.value.p60 {
+  width: 60%;
+}
+.value.p70 {
+  width: 70%;
+}
+.value.p80 {
+  width: 80%;
+}
+.value.p90 {
+  width: 90%;
+}
+.btn {
+  border: solid 3px #ff7168;
+  padding: 5px 10px;
+}
+.fill {
+  background-color: $background_color_2;
+  margin-right: 10px;
+}
